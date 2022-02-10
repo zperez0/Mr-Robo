@@ -1,5 +1,6 @@
 // business logic
 
 function beeBoop() {
-  return 0;
+  const userNum = [0,1,2,3]
+  return userNum;
 }
