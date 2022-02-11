@@ -3,6 +3,10 @@ body {
   background: linear-gradient(90deg, rgba(181,101,118,1) 35%, rgba(34,193,195,1) 100%);
 }
 
+.jumbotron {
+  background-color: rgba(253, 253, 253, 0.555);
+  text-align: center;
+}
 
 
 #resultsDisplay {

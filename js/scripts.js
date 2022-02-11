@@ -21,7 +21,6 @@ function beepBoop(userNum) {
 
 
   // user logic
-
   $(document).ready(function() {
     $('form#neighbor').submit(function(event) {
       event.preventDefault();
