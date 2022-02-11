@@ -12,6 +12,7 @@ body {
 #resultsDisplay {
   padding: 20px;
   margin: 20px;
+  width: 810px;
   border: solid rgba(4, 120, 173, 0.747);
   border-width: 2px;
   display: none;
