@@ -31,6 +31,10 @@ function beepBoop(userNum) {
       $('.fullName').text(fullName1Input);
       $("#results").text(result);
       $("#resultsDisplay").show();
+    
+      $('#reset').click(function() {
+        $("#resultsDisplay").toggle().hide();
+        document.getElementById('neighbor').reset();
     });
   });
-
+});
