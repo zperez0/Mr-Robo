@@ -8,10 +8,7 @@
       <title>Mr. Roboger's Neighborhood</title>
    </head>
    <body>
-      <label class = "switch">
-      <input type="checkbox">
-      <span class="slider round"></span>
-      </label>
+
       <div class="container">
          <form id="neighbor">
             <div class="jumbotron">
@@ -23,7 +20,7 @@
             <!-- name -->
          <form id="formOne">
             <div class="form-group">
-               <label for="fullName">What's your name friend? </label>
+               <label for="fullName">What's your name friend?</label>
                <input id="fullName" class="form-control" type="text">
             </div>
 
@@ -31,34 +28,36 @@
 
             <!-- input number -->
             <div class="form-group">
-            <label for="userNum">Enter any number: </label>
-            <input id="userNum" class="form-control" type="text">
+            <label for="userInput">Enter any number:</label>
+            <input id="userInput" class="form-control" type="text">
          </div>
 
 
 
          <!-- button -->
             <button type="submit" class="btn btn-secondary">Submit</button>
-         </form>
+       
+      
 
 
 
          <!-- results -->
-         <div class="result">
             <div id="robo">
+               <div id="results">
                <h2><span class="fullName"></span>, welcome to the neighborhood!</h2>
-               <p></p>
-            
+                  
                <div id="roboImg">
                   <img src="img/robo.jpg">
                </div>
             </div>
-
-            <!-- reset -->
-            <div id = "reset">
-               <button type = "reset" class = "btn btn-secondary">Reset</button>
-            </div>
          </div>
       </div>
+   </form>
+            <!-- reset -->
+            <!-- <div id = "reset">
+               <button type = "reset" class = "btn btn-secondary">Reset</button>
+            </div>
+         </div> -->
+
    </body>
 </html>

@@ -22,24 +22,26 @@ function beeBoop(userNum) {
 
   // user logic
   $(document).ready(function() {
-    $('form#neighbor').submit(function(event) {
+    $('#neighbor').submit(function(event) {
 event.preventDefault();
 
-const fullName = $('input#fullName').val();
-const userNum = $('input#userNum').val();
+const fullName1Input = $('input#fullName').val();
+const userInput = $('input#userInput').val();
+const result = beeBoop(userInput);
 
-$('.fullName').text(fullName);
-$('.result').show();
+$('.fullName').text(fullName1Input);
+$('#results').text(result);
+$('#results').show();
 $('#reset').show();
-$('#neighbor').hide();
-$("#robo").hide();
+// $('form#neighbor').hide();
+$("#robo").show();
 
-
-    $('#reset').click(function() {
-      $('#neighbor').toggle().show();
-      $('#reset').toggle().hide();
-      $("#robo").toggle().hide();
-      document.getElementById('neighbor').reset();
-  });
+  //   $('#reset').click(function() {
+  //     $('#neighbor').toggle().show();
+  //     $('#reset').toggle().hide();
+  //     $("#robo").toggle().hide();
+  //     document.getElementById('#neighbor').reset();
+  // });
 });
 });
+
