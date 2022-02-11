@@ -1,13 +1,14 @@
 #resultsDisplay {
   padding: 20px;
   margin: 20px;
-  border: solid rgba(151, 0, 0, 0.61);
+  border: solid rgba(4, 120, 173, 0.747);
   border-width: 2px;
   display: none;
 }
 
-
-/* #robo {
+.center {
   display: block;
-  padding: 30px;
-  } */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
