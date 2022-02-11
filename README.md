@@ -69,4 +69,4 @@ Expected Output:
 
 _[MIT](https://en.wikipedia.org/wiki/MIT_License)_
 
-Copyright (c) _2022_ _Z Perez)_
+Copyright (c) _2022_ _Z Perez_
