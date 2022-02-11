@@ -1,5 +1,5 @@
 // business logic
-function beeBoop(userNum) {
+function beepBoop(userNum) {
 
   userNum = parseInt(userNum);
     let roboText = [];
@@ -7,41 +7,31 @@ function beeBoop(userNum) {
       let userStr = i.toString();
   
       if (userStr.includes('3')) {
-        roboText.push("Won't you be my neighbor?");
+        roboText.push(" Won't you be my neighbor?");
       } else if (userStr.includes('2')) {
-        roboText.push("Boop");
+        roboText.push(" Boop");
       } else if (userStr.includes('1')) {
-        roboText.push("Beep");
+        roboText.push(" Beep");
       } else {
         roboText.push(userStr);
       }
     }
-    return roboText;
+    return roboText.join(', ');
   }
 
 
   // user logic
+
   $(document).ready(function() {
-    $('#neighbor').submit(function(event) {
-event.preventDefault();
+    $('form#neighbor').submit(function(event) {
+      event.preventDefault();
+      let userInput = $('input#userInput').val();
+      let result = beepBoop(userInput);
+      let fullName1Input = $('input#fullName').val();
 
-const fullName1Input = $('input#fullName').val();
-const userInput = $('input#userInput').val();
-const result = beeBoop(userInput);
-
-$('.fullName').text(fullName1Input);
-$('#results').text(result);
-$('#results').show();
-$('#reset').show();
-// $('form#neighbor').hide();
-$("#robo").show();
-
-  //   $('#reset').click(function() {
-  //     $('#neighbor').toggle().show();
-  //     $('#reset').toggle().hide();
-  //     $("#robo").toggle().hide();
-  //     document.getElementById('#neighbor').reset();
-  // });
-});
-});
+      $('.fullName').text(fullName1Input);
+      $("#results").text(result);
+      $("#resultsDisplay").show();
+    });
+  });
 
