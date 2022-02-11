@@ -1,4 +1,7 @@
 #resultsDisplay {
+  padding: 20px;
+  border: solid rgba(151, 0, 0, 0.61);
+  border-width: 2px;
   display: none;
 }
 
