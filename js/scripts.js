@@ -1,9 +1,9 @@
 // business logic
-function beeBoop(userInput) {
+function beeBoop(userNum) {
 
-  userInput = parseInt(userInput);
+  userNum = parseInt(userNum);
     let roboText = [];
-    for (let i = 0; i <= userInput; i++) {
+    for (let i = 0; i <= userNum; i++) {
       let userStr = i.toString();
   
       if (userStr.includes('3')) {
@@ -21,4 +21,25 @@ function beeBoop(userInput) {
 
 
   // user logic
-  $(document).ready(function()
+  $(document).ready(function() {
+    $('form#neighbor').submit(function(event) {
+event.preventDefault();
+
+const fullName = $('input#fullName').val();
+const userNum = $('input#userNum').val();
+
+$('.fullName').text(fullName);
+$('.result').show();
+$('#reset').show();
+$('#neighbor').hide();
+$("#robo").hide();
+
+
+    $('#reset').click(function() {
+      $('#neighbor').toggle().show();
+      $('#reset').toggle().hide();
+      $("#robo").toggle().hide();
+      document.getElementById('neighbor').reset();
+  });
+});
+});
