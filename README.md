@@ -24,7 +24,7 @@ _This web application is designed to take a number from the user and return a ra
 * _Open [GitHub](https://github.com/)_
 * _Copy repository url_
 * _Clone this repository to your desktop_
-* _Open program-lang-selector/index.html_
+* _Open Mr-Robo/index.html_
 * _Drag and drop into browser_
 
 ## Tests:
